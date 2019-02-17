@@ -2,10 +2,10 @@ package matricadomashnodenislav;
 
 public class matricadomashnodenislav 
 {
-
+	
 	public static void main (String[] args) {
 	int[][] matrix = 
-	{
+		{
             { 0, 2, 4, 0, 9, 5 },
 
             { 7, 1, 3, 3, 2, 1 },
@@ -30,9 +30,7 @@ public class matricadomashnodenislav
             if (sum > bestsum) {
 
                 bestsum = sum;
-
                 bestrow = row;
-
                 bestcol = col;
 
             }
@@ -41,19 +39,18 @@ public class matricadomashnodenislav
 
     }
 
-    System.out.println("the best platform is:");
-
-    System.out.printf("  %d %d %d %n",
+    System.out.println("the best platform is: \t");
+    System.out.printf("\t");
+    System.out.printf("  %d %d %d %n \t",
 
     matrix[bestrow][bestcol], matrix[bestrow][bestcol + 1], matrix[bestrow + 1][bestcol]);
 
-    System.out.printf("  %d %d %d %n",
+    System.out.printf("  %d %d %d %n \t",
 
     matrix[bestrow + 1][bestcol],matrix[bestrow + 1][bestcol - 1],matrix[bestrow + 1][bestcol - 1]);
-    System.out.printf("  %d %d %d %n", matrix[bestrow + 1][bestcol],matrix[bestrow + 1][bestcol - 1],
+    System.out.printf("  %d %d %d %n \t ", matrix[bestrow + 1][bestcol],matrix[bestrow + 1][bestcol - 1],
     matrix[bestrow][bestcol]);
 
     System.out.printf("the maximal sum is: %d%n", bestsum);
 
-}
 }
